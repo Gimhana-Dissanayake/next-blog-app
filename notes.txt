@@ -1,5 +1,0 @@
-lesson - 3
-There is folder called .bin 
-.bin folder contains commandline tools.
-One of these tools are called next
-
