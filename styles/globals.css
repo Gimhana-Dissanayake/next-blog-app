@@ -11,15 +11,17 @@ a:focus, a:hover{
     text-decoration: underline;
 }
 
-ul{
+/* .nav-bar ul{
     list-style-type:none;
     padding:0;
 }
 
-li{
+.nav-bar li{
     display: inline;
 }
 
-li:not(:first-child){
+.nav-bar li:not(:first-child){
     margin-left:0.75rem;
-}
+} 
+
+*/
