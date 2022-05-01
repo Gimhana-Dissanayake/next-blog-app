@@ -1,9 +1,26 @@
+
+/* Light Theme */
+:root{
+    --background-color:white;
+    --link-color:darkred;
+    --text-color:black;
+}
+
+/* Dark Theme */
+:root{
+    --background-color:black;
+    --link-color:yellow;
+    --text-color:white;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 a{
-    color:darkred;
+    color:var(--link-color);
     text-decoration:none
 }
 
