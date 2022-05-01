@@ -1,5 +1,5 @@
-import Link from "next/link";
-import ThemeSwitch from "./ThemeSwitch";
+import Link from 'next/link'
+import ThemeSwitch from './ThemeSwitch'
 
 function NavBar() {
   return (
@@ -7,12 +7,12 @@ function NavBar() {
       <ul>
         <li>
           <Link href="/">
-            <a>Home</a>
+            <a className="link-home">Home</a>
           </Link>
         </li>
         <li>
           <Link href="/about">
-            <a>About</a>
+            <a className="link-about">About</a>
           </Link>
         </li>
       </ul>
@@ -39,7 +39,7 @@ function NavBar() {
         `}
       </style>
     </nav>
-  );
+  )
 }
 
-export default NavBar;
+export default NavBar

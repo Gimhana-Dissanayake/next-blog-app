@@ -1,30 +1,30 @@
-import Head from "next/head";
-import { getPost, getSlugs } from "../../lib/posts";
+import Head from 'next/head'
+import {getPost, getSlugs} from '../../lib/posts'
 
 export async function getStaticPaths() {
-  const slug = await getSlugs();
+  const slugs = await getSlugs()
 
   return {
-    paths: slug.map((slug) => ({
-      params: { slug },
+    paths: slugs.map((slug) => ({
+      params: {slug},
     })),
     fallback: false,
-  };
+  }
 }
 
-export async function getStaticProps({ params: { slug } }) {
-  console.log("[PostPage] getStaticProps(): ", slug);
-  const post = await getPost(slug);
+export async function getStaticProps({params: {slug}}) {
+  console.log('[PostPage] getStaticProps(): ', slug)
+  const post = await getPost(slug)
 
   return {
     props: {
       post,
     },
-  };
+  }
 }
 
-function PostPage({ post }) {
-  console.log("[PostPage] render:", post);
+function PostPage({post}) {
+  console.log('[PostPage] render:', post)
 
   return (
     <>
@@ -34,10 +34,10 @@ function PostPage({ post }) {
       <main>
         <p>{post.date}</p>
         <h1>{post.title}</h1>
-        <article dangerouslySetInnerHTML={{ __html: post.body }} />
+        <article dangerouslySetInnerHTML={{__html: post.body}} />
       </main>
     </>
-  );
+  )
 }
 
-export default PostPage;
+export default PostPage

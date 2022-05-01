@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Head from 'next/head'
 
 function AboutPage() {
   return (
@@ -8,9 +8,13 @@ function AboutPage() {
       </Head>
       <main>
         <h1>About</h1>
+        <p>
+          I am Software engineer. I do both frontend and backend work. My favourite technologies
+          include React.js, Next.js, Spring and AWS
+        </p>
       </main>
     </>
-  );
+  )
 }
 
-export default AboutPage;
+export default AboutPage

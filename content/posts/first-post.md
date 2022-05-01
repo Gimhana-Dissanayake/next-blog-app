@@ -1,14 +1,8 @@
 ---
-date: "2021-04-21"
-title: "First Post"
+date: '2022-05-1'
+title: 'What is React?'
 ---
 
-This is my first post, written in Markdown.
+React is fontend framework. It is unopinionated. Created by Facebook, it the most popular frontend framework.
 
-Here's some **bold text**.
-
-And a list:
-
-- One
-- Two
-- Three
+First release **- May 29, 2013**.

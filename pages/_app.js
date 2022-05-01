@@ -1,8 +1,8 @@
-import NavBar from "../components/NavBar";
-import Head from "next/head";
-import "../styles/globals.css";
+import NavBar from '../components/NavBar'
+import Head from 'next/head'
+import '../styles/globals.css'
 
-function App({ Component, pageProps }) {
+function App({Component, pageProps}) {
   return (
     <>
       <Head>
@@ -11,9 +11,9 @@ function App({ Component, pageProps }) {
       <header>
         <NavBar />
       </header>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

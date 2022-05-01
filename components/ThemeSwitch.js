@@ -1,25 +1,25 @@
-import { useState } from "react";
-import DarkTheme from "./DarkTheme";
+import {useState} from 'react'
+import DarkTheme from './DarkTheme'
 
 function loadDarkMode() {
-  if (typeof localStorage === "undefined") {
-    return false;
+  if (typeof localStorage === 'undefined') {
+    return false
   }
 
-  const value = localStorage.getItem("darkMode");
-  return value === null ? false : JSON.parse(value);
+  const value = localStorage.getItem('darkMode')
+  return value === null ? false : JSON.parse(value)
 }
 
 function ThemeSwitch() {
-  const [darkMode, setDarkMode] = useState(loadDarkMode);
+  const [darkMode, setDarkMode] = useState(loadDarkMode)
 
   const handleClick = () => {
-    localStorage.setItem("darkMode", JSON.stringify(!darkMode));
-    setDarkMode(!darkMode);
-  };
+    localStorage.setItem('darkMode', JSON.stringify(!darkMode))
+    setDarkMode(!darkMode)
+  }
 
-  console.log("[ThemeSwitch] darkMode:", darkMode);
-  const text = darkMode ? "Light Mode" : "Dark Mode";
+  console.log('[ThemeSwitch] darkMode:', darkMode)
+  const text = darkMode ? 'Light Mode' : 'Dark Mode'
 
   return (
     <>
@@ -39,7 +39,7 @@ function ThemeSwitch() {
 
       {darkMode && <DarkTheme />}
     </>
-  );
+  )
 }
 
-export default ThemeSwitch;
+export default ThemeSwitch

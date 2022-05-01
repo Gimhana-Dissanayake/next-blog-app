@@ -2,7 +2,7 @@
 /* Light Theme */
 :root{
     --background-color:white;
-    --link-color:darkred;
+    --link-color:purple;
     --text-color:black;
 }
 
@@ -14,7 +14,11 @@ body{
 
 a{
     color:var(--link-color);
-    text-decoration:none
+    text-decoration:none;
+}
+
+ul li{
+    list-style-type: circle;
 }
 
 a:focus, a:hover{

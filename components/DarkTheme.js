@@ -3,11 +3,11 @@ function DarkTheme() {
     <style jsx global>{`
       :root {
         --background-color: black;
-        --link-color: yellow;
+        --link-color: white;
         --text-color: white;
       }
     `}</style>
-  );
+  )
 }
 
-export default DarkTheme;
+export default DarkTheme
