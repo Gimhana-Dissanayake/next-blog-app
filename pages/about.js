@@ -9,7 +9,7 @@ function AboutPage() {
       <main>
         <h1>About</h1>
         <p>
-          I am Software engineer. I do both frontend and backend work. My favourite technologies
+          I a am Software engineer. I do both frontend and backend work. My favourite technologies
           include React.js, Next.js, Spring and AWS
         </p>
       </main>
