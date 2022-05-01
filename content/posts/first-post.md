@@ -1,5 +1,5 @@
 ---
-date: '2022-05-1'
+date: '2022-05-01'
 title: 'What is React?'
 ---
 
